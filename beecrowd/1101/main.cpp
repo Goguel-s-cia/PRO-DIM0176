@@ -15,13 +15,13 @@ int main() {
         //Zera a soma
         int soma = 0;
 
-        //Printa cada inteiro da sequencia em ordem crescente
+        //Printa cada inteiro da sequencia em ordem crescente, até chegar no m, que é o maior número da sequencia
         for(int i = n; i < m; i++) {
             std::cout << i << " ";
             soma += i;
         }
 
-        //printa o ultimo valor e a soma
+        //Printa o ultimo valor e a soma
         std::cout << m << " Sum=" << soma+m << "\n";
     }
 

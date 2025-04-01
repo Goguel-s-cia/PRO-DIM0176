@@ -24,7 +24,7 @@ int main() {
         //Loop para trabalhar com cada palavra individual do fluxo
         while (fluxo >> palavra) {
 
-            //O '\0' indica que é a primeira palavra, entao nao tem com o que comparar
+            //O '\0' indica que é a primeira palavra, entao não tem com o que comparar
             if (primeiraLetra == '\0') {
                 //Sempre colocando em maiúsculo tudo pra não haver problema
                 primeiraLetra = toupper(palavra[0]);

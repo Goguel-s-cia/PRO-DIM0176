@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include <cctype>
+#include <cctype> //Biblioteca utilizada para as comparações
 
 //Função com a lógica de programação para validar a senha
 bool validarSenha(const std::string& senha) {

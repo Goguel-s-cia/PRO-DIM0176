@@ -2,7 +2,7 @@
 #include <cmath>
 
 int main() {
-    //Casos teste
+    //Quantidade de casos teste
     int T;
     std::cin >> T;
     
