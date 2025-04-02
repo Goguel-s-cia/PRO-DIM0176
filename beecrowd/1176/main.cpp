@@ -1,29 +1,29 @@
 #include <iostream>
 
-//pesquisei e aprendi esse método, não o desenvolvi sozinho, mas entendi seu funcionamento, transformando tudo, no final, em zeros e ums e somando-os
-int fibonacci(int n) {
-    if (n <= 1) {
-        return n;
-    } else if (n == 2) {
-        return 1;
-    } else {
-        //Aplicando recursividade até que não chegue mais nesse else e tudo sejam apenas 1 ou 0
-        return fibonacci(n-1) + fibonacci(n-2);
-    }
-}
-
 int main() {
-    //Quantidade de casos
+    //Array para armazenar os números de Fibonacci
+    unsigned long long fib[61];
+    
+    //Inicializa os primeiros valores da sequência
+    fib[0] = 0;
+    fib[1] = 1;
+    
+    //Calcula todos os números de Fibonacci até o 60º termo
+    for (int i = 2; i <= 60; i++) {
+        fib[i] = fib[i-1] + fib[i-2];
+    }
+    
+    //Lê o número de casos de teste
     int T;
     std::cin >> T;
-
-    //Loop que loopa a quantidade de casos
+    
+    //Processa cada caso de teste
     for (int i = 0; i < T; i++) {
         int N;
         std::cin >> N;
-        //Chamada da função que age de maneira recursiva
-        std::cout << "Fib(" << N << ") = " << fibonacci(N) << "\n";
+        std::cout << "Fib(" << N << ") = " << fib[N] << "\n";
     }
+    
     return 0;
 }
 
