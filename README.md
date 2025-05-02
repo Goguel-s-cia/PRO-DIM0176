@@ -21,4 +21,4 @@ Este repositório contém as atividades de programação realizadas ao longo da 
 [🔗 Sloc](https://github.com/Goguel/Sloc)
 
 #### Descrição:
- Contador de linhas de código, comentários e espaços em branco de arquivos .C e .C++, via CLI.
+ Contador de linhas de código, comentários e espaços em branco de arquivos .c e .cpp, via CLI.
